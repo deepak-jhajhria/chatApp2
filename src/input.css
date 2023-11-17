@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .underLine {
+    @apply relative after:absolute after:bg-white after:w-0 after:h-[2px] after:rounded-xl after:bottom-0 after:left-0 inline after:hover:w-full after:duration-300;
+  }
+  .mobileView {
+    @apply max-md:flex max-md:flex-col max-md:items-center max-md:top-0 max-md:fixed max-md:justify-center max-md:w-full max-md:h-full max-md:-left-full duration-300 max-md:bg-[#1e71ff] max-md:z-50;
+  }
+  .mobileView.show{
+    @apply max-md:left-0
+  }
+  .menu span {
+    @apply w-6 h-[2px] mt-[7px] bg-white flex flex-col items-center
+  }
+  .span4{
+    @apply h-[2.4px] rotate-45 relative top-[3px] right-[5px] bg-white duration-300 rounded-2xl
+  }
+  .span5{
+    @apply h-[2.4px] -rotate-45 relative -top-[6.5px] right-[5px] bg-white duration-300 w-6 rounded-2xl
+  }
+  .span6{
+    @apply hidden duration-300
+  }
+}
