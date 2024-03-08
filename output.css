@@ -657,7 +657,8 @@ video {
 }
 
 .span6 {
-  display: none !important;
+  display: none !important
+  ;
   transition-duration: 300ms;
 }
 
